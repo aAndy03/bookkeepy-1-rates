@@ -34,3 +34,14 @@ The single source of truth for the package format is [docs/package-format.md](do
 
 GPL-3.0-or-later (see [LICENSE](LICENSE)). Packages are data; the automation code is code —
 both under the same license.
+
+## Automation & trust
+
+- `.github/workflows/update-rates.yml` fetches the sources (BNR first) on a schedule and
+  on manual dispatch, builds `bookkeepy-rates-package@1` packages, sha256-checksums them
+  and **ed25519-signs** them (ADR-0023 in the main repo). The private key is the repo
+  secret `RATES_SIGNING_KEY`; the public key is committed at `keys/rates-ed25519.pub.pem`
+  and the app pins it (refuses unsigned/badly-signed packages, `BK-RATES-0002`).
+- Packages are immutable; corrections are `kind = "addendum"` packages (spec:
+  `docs/package-format.md`).
+- The app never talks to live sources — it downloads only from this repo.
