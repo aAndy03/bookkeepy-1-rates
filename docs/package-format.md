@@ -73,3 +73,30 @@ support and refuse unknown versions loudly.
 `kind = "incremental"` packages contain only rates that changed/added since the previous
 package of the same source (`supersedes` points at it). The app applies packages in
 manifest order per source. A `full` package resets the source's series.
+
+## Archive packages (history backfill)
+
+BNR publishes yearly archives (`https://curs.bnr.ro/files/xml/years/nbrfxratesYYYY.xml`,
+2005 → current year). The mirror converts each year into ONE **archive package** so the
+repo stays small (22 files instead of ~5 000 daily files):
+
+```json
+{
+  "spec_version": "bookkeepy-rates-package@1",
+  "package_id": "bnr-archive-2005",
+  "source": { "id": "bnr", "…": "…", "fetched_at": "…" },
+  "base_currency": "RON",
+  "date": "2005",
+  "kind": "archive",
+  "rates": [ { "date": "2005-01-04", "currency": "EUR", "rate": "…", "multiplier": "1" }, … ],
+  "corrections_of": null
+}
+```
+
+`kind: "archive"` is additive within spec @1 (consumers that don't know it refuse loudly,
+per the versioning rule above). Daily `kind: "full"` packages continue for the current
+day; the scheduled job fetches ONLY the latest quote (`https://curs.bnr.ro/nbrfxrates.xml`,
+updated in real time after 13:00 each banking day). Archives are produced by the
+`backfill` workflow (manual dispatch) via `tools/build_package.py archive <year> …`.
+Archives are immutable like everything else; a corrected year is a new archive with
+`kind: "addendum"` + `corrections_of`.
