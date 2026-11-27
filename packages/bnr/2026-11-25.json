@@ -1,0 +1,201 @@
+{
+  "spec_version": "bookkeepy-rates-package@1",
+  "package_id": "bnr-2026-11-25",
+  "source": {
+    "id": "bnr",
+    "name": "Banca Națională a României",
+    "url": "https://www.bnr.ro/23988-cursurile-pietei-valutare-in-format-xml",
+    "fetched_at": "2026-11-27T17:40:07Z"
+  },
+  "base_currency": "RON",
+  "date": "2026-11-25",
+  "kind": "full",
+  "rates": [
+    {
+      "currency": "AED",
+      "rate": "1.3292",
+      "multiplier": "1"
+    },
+    {
+      "currency": "AUD",
+      "rate": "3.2069",
+      "multiplier": "1"
+    },
+    {
+      "currency": "BRL",
+      "rate": "0.8259",
+      "multiplier": "1"
+    },
+    {
+      "currency": "CAD",
+      "rate": "3.4183",
+      "multiplier": "1"
+    },
+    {
+      "currency": "CHF",
+      "rate": "5.8670",
+      "multiplier": "1"
+    },
+    {
+      "currency": "CNY",
+      "rate": "0.7313",
+      "multiplier": "1"
+    },
+    {
+      "currency": "CZK",
+      "rate": "0.2185",
+      "multiplier": "1"
+    },
+    {
+      "currency": "DKK",
+      "rate": "0.7148",
+      "multiplier": "1"
+    },
+    {
+      "currency": "EGP",
+      "rate": "0.0892",
+      "multiplier": "1"
+    },
+    {
+      "currency": "EUR",
+      "rate": "5.3428",
+      "multiplier": "1"
+    },
+    {
+      "currency": "GBP",
+      "rate": "6.3817",
+      "multiplier": "1"
+    },
+    {
+      "currency": "HKD",
+      "rate": "0.6229",
+      "multiplier": "1"
+    },
+    {
+      "currency": "HUF",
+      "rate": "1.4326",
+      "multiplier": "100"
+    },
+    {
+      "currency": "IDR",
+      "rate": "0.0269",
+      "multiplier": "100"
+    },
+    {
+      "currency": "ILS",
+      "rate": "1.4459",
+      "multiplier": "1"
+    },
+    {
+      "currency": "INR",
+      "rate": "0.0529",
+      "multiplier": "1"
+    },
+    {
+      "currency": "ISK",
+      "rate": "3.8942",
+      "multiplier": "100"
+    },
+    {
+      "currency": "JPY",
+      "rate": "3.0646",
+      "multiplier": "100"
+    },
+    {
+      "currency": "KRW",
+      "rate": "0.3631",
+      "multiplier": "100"
+    },
+    {
+      "currency": "MDL",
+      "rate": "0.2658",
+      "multiplier": "1"
+    },
+    {
+      "currency": "MXN",
+      "rate": "0.2489",
+      "multiplier": "1"
+    },
+    {
+      "currency": "MYR",
+      "rate": "1.1849",
+      "multiplier": "1"
+    },
+    {
+      "currency": "NOK",
+      "rate": "0.4948",
+      "multiplier": "1"
+    },
+    {
+      "currency": "NZD",
+      "rate": "2.6664",
+      "multiplier": "1"
+    },
+    {
+      "currency": "PHP",
+      "rate": "0.0767",
+      "multiplier": "1"
+    },
+    {
+      "currency": "PLN",
+      "rate": "1.1920",
+      "multiplier": "1"
+    },
+    {
+      "currency": "RSD",
+      "rate": "0.0454",
+      "multiplier": "1"
+    },
+    {
+      "currency": "RUB",
+      "rate": "0.0591",
+      "multiplier": "1"
+    },
+    {
+      "currency": "SEK",
+      "rate": "0.4758",
+      "multiplier": "1"
+    },
+    {
+      "currency": "SGD",
+      "rate": "3.7792",
+      "multiplier": "1"
+    },
+    {
+      "currency": "THB",
+      "rate": "0.1431",
+      "multiplier": "1"
+    },
+    {
+      "currency": "TRY",
+      "rate": "0.0965",
+      "multiplier": "1"
+    },
+    {
+      "currency": "UAH",
+      "rate": "0.1078",
+      "multiplier": "1"
+    },
+    {
+      "currency": "USD",
+      "rate": "4.8817",
+      "multiplier": "1"
+    },
+    {
+      "currency": "XAU",
+      "rate": "553.9606",
+      "multiplier": "1"
+    },
+    {
+      "currency": "XDR",
+      "rate": "6.5517",
+      "multiplier": "1"
+    },
+    {
+      "currency": "ZAR",
+      "rate": "0.2773",
+      "multiplier": "1"
+    }
+  ],
+  "corrections_of": null
+}
