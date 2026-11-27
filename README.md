@@ -32,8 +32,9 @@ The single source of truth for the package format is [docs/package-format.md](do
 
 ## License
 
-GPL-3.0-or-later (see [LICENSE](LICENSE)). Packages are data; the automation code is code —
-both under the same license.
+MIT (see [LICENSE](LICENSE)) for this repo's tooling and package arrangement. The rates data
+itself is published by Banca Națională a României (https://www.bnr.ro) and remains theirs;
+facts/data are not copyrightable, and BNR's terms of use apply to the data.
 
 ## Automation & trust
 
